@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.termproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.termproject.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.termproject.input_name" android:label="참가자 이름"/>
+        <activity android:name="com.example.termproject.input_bomb" android:label="꽝/벌칙"/>
+        <activity android:name="com.example.termproject.runActivity" android:label="실행화면"/>
+        <activity android:name="com.example.termproject.victoryActivity" android:label="승리화면"/>
+        <activity android:name="com.example.termproject.bombActivity" android:label="꽝화면"/>
+        <activity android:name="com.example.termproject.resultActivity" android:label="결과창"/>
+        <activity android:name="com.example.termproject.view_record" android:label="기록보기"
+            android:theme="@style/custom_dialog_text"/>
+        <activity android:name="com.example.termproject.appInformation" android:label="앱정보"
+            android:theme="@style/custom_dialog_text"/>
+        <activity android:name="com.example.termproject.developerInformation" android:label="개발자정보"
+            android:theme="@style/custom_dialog_text"/>
+
+    </application>
+
+</manifest>

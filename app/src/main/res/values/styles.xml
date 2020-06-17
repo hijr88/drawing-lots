@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/violet</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/violet</item>
+
+
+        <!--다이얼로그 테마-->
+        <item name="colorBackgroundFloating">@color/background_floating_material_dark</item>
+        <!--다이얼로그 리스트글씨 색상-->
+        <item name="textColorAlertDialogListItem">@color/white</item>
+        <!--메뉴 테마-->
+        <item name="android:itemBackground">@color/background_floating_material_dark</item>
+        <item name="android:itemTextAppearance">@style/menutextColor</item>
+
+
+        <item name="android:actionOverflowButtonStyle">@style/MenuButtonColor</item>
+
+        <item name="actionBarStyle">@style/MyActionBar</item>
+
+        <!--글꼴-->
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+        <item name="android:editTextStyle">@style/CustomEditTextStyle</item>
+        <item name="android:radioButtonStyle">@style/CustomRadioButtonStyle</item>
+        <item name="android:textViewStyle">@style/CustomTextViewStyle</item>
+        <!--글꼴-->
+        <item name="colorControlHighlight">#89EEF3</item>
+    </style>
+
+    <!--다이얼로그의 텍스트색깔 지정  테마를 상속받을경우-->
+    <style name="custom_dialog_text" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:textViewStyle">@style/Custom_dialog_textColor</item>
+    </style>
+
+    <!--커스텀 글꼴-->
+    <style name="CustomTextViewStyle" >
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:fontFamily">@font/cookierunbold</item>
+    </style>
+    <style name="CustomButtonStyle" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:fontFamily">@font/cookierunbold</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="CustomEditTextStyle" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/cookierunbold</item>
+    </style>
+    <style name="CustomRadioButtonStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/cookierunbold</item>
+    </style>
+
+    <style name="Custom_dialog_textColor" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/cookierunbold</item>
+    </style>
+    <!--커스텀 글꼴-->
+
+    <!--메뉴안의 글씨 색상-->
+    <style name="menutextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--메뉴 버튼 색상-->
+    <style name="MenuButtonColor" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/darkblue</item>
+    </style>
+
+
+    <!--액션바 색상, 글꼴-->
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="background">@color/violet</item>
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+
+
+
+
+
+
+
+</resources>
